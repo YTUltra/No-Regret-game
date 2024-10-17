@@ -1,4 +1,5 @@
 body{
+    margin: 0;
     background-color: #262626;
 }
 @font-face {
@@ -17,12 +18,12 @@ body{
     border-radius: 10px;
     position: relative;
     @media only screen and (max-width: 1366px) {
-        width: 500px;
-        height: 500px;
+        width: 450px;
+        height: 450px;
     }
     @media only screen and (max-width: 1200px) {
-        width: 390px;
-        height: 390px;
+        width: 350px;
+        height: 350px;
     }
 }
 .fruta{
@@ -81,6 +82,7 @@ body{
     box-shadow: 2px 2px 5px 2px rgb(0, 0, 0) inset;
 }
 .pontuacao{
+    margin: 0;
     font-family: digitos;
     font-size: 20px;
     color: greenyellow;
@@ -91,10 +93,13 @@ body{
     right: 20%;
     top: 50%;
     @media only screen and (max-width: 500px) {
-        top: 70%;
+        top: auto;
+        bottom: 10%;
+        right: 10%;
     }
 }
 .dificuldade{
+    margin: 0;
     font-family: digitos;
     font-size: 20px;
     color: greenyellow;
@@ -105,8 +110,8 @@ body{
     left: 20%;
     top: 50%;
     @media only screen and (max-width: 500px) {
-        left: auto;
-        right: 20%;
-        top: 65%;
+        top: auto;
+        bottom: 10%;
+        left: 10%;
     }
 }

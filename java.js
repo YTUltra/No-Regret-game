@@ -1,13 +1,17 @@
 //Define as variaveis
+//Posição inicial do jogador
 let posX = 2500;
 let posY = 4900;
+//Pontuação e quantidade de frutas (serão aumentadas conforme a dificuldade)
 let score = 0;
 let quant_frutas = 5;
 let quant_buraco = 10;
+//Variaveis utilizadas para a alteração de estilos ou ações dentro do documento
+let comec = document.getElementById("comecar");
 let pers = document.getElementById("personagem");
 let frut = document.getElementById("fruta");
 let bura = document.getElementById("buraco");
-
+//Matriz que armazena as frutas e buracos do jogo
 let buracos = [];
 let frutas = [];
 
@@ -17,6 +21,14 @@ function start(){
     quant_buraco = quant_buraco * document.getElementById("dificuldade").value;
     frutas_random();
     buracos_random();
+    comec.setAttribute("onClick", "javascript: restart();");
+    comec.innerHTML = "RESTART";
+    comec.style.fontWeight = "bold";
+}
+
+//Função para reiniciar o jogo
+function restart(){
+    location.reload()
 }
 
 //Função para traduzir o comando para a esquerda para o personagem
