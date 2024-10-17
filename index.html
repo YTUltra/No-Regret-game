@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Regret</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="java.js" defer></script>
+</head>
+<body>
+    <select id="dificuldade" class="dificuldade">
+        <option value="1">EASY</option>
+        <option value="2">MEDIUM</option>
+        <option value="3">HARD</option>
+    </select>
+    <div id="tela" class="tela">
+        <div id="personagem" class="personagem"></div>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <button class="comandos" onclick="move_left()"><b><</b></button>
+        <button class="comandos" onclick="move_up()"><b>^</b></button>
+        <button class="comandos" onclick="move_right()"><b>></b></button>
+        <br><br>
+        <button id="comecar" class="comandos" style="width: fit-content;" onclick="start()"><b>COMECAR</b></button>
+    </div>
+    <p id="score" class="pontuacao">SCORE: 000</p>
+    </body>
+</html>

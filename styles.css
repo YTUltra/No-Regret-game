@@ -1,0 +1,112 @@
+body{
+    background-color: #262626;
+}
+@font-face {
+    font-family: digitos;
+    src: url(font/calculator-display.ttf);
+}
+.tela{
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    background-image: linear-gradient(to right, darkgreen 2px, green 2px),
+    linear-gradient(to bottom, darkgreen 1px, transparent 2px);
+    background-size: 2% 2%;
+    background-position: -1px 0px;
+    border: 3px solid black;
+    border-radius: 10px;
+    position: relative;
+    @media only screen and (max-width: 1366px) {
+        width: 500px;
+        height: 500px;
+    }
+    @media only screen and (max-width: 1200px) {
+        width: 390px;
+        height: 390px;
+    }
+}
+.fruta{
+    background-color: red;
+    border-radius: 50%;
+    width: 2%;
+    height: 2%;
+    transform: translate(2500%, 4500%);
+    position: absolute;
+    display: flex;
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.3);
+}
+.buraco{
+    background-color: black;
+    border-radius: 50%;
+    width: 2%;
+    height: 2%;
+    position: absolute;
+    display: flex;
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.3);
+}
+.personagem{
+    background-color: blue;
+    border-radius: 50%;
+    width: 2%;
+    height: 2%;
+    transform: translate(2500%, 4900%);
+    position: absolute;
+    display: flex;
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.3);
+    z-index: 69;
+}
+.comandos{
+    background-color: #565656;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    @media only screen and (max-width: 500px) {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+}
+.comandos:hover{
+    color: white;
+    border: 3px solid white;
+}
+.comandos:active{
+    color: white;
+    border: 3px solid white;
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 5px 2px rgb(0, 0, 0) inset;
+}
+.pontuacao{
+    font-family: digitos;
+    font-size: 20px;
+    color: greenyellow;
+    background-color: black;
+    border: 2px solid #565656;
+    padding: 1px;
+    position: fixed;
+    right: 20%;
+    top: 50%;
+    @media only screen and (max-width: 500px) {
+        top: 70%;
+    }
+}
+.dificuldade{
+    font-family: digitos;
+    font-size: 20px;
+    color: greenyellow;
+    background-color: black;
+    border: 2px solid #565656;
+    padding: 1px;
+    position: fixed;
+    left: 20%;
+    top: 50%;
+    @media only screen and (max-width: 500px) {
+        left: auto;
+        right: 20%;
+        top: 65%;
+    }
+}
