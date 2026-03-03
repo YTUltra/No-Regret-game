@@ -151,4 +151,18 @@ function verifica_final(){
             }
         }
     }
+
 }
+
+//Registra entradas do teclado do usuário
+document.addEventListener("keydown", (event) => {
+    if(event.key == "ArrowUp"){
+        move_up();
+    };
+    if(event.key == "ArrowLeft"){
+        move_left();
+    };
+    if(event.key == "ArrowRight"){
+        move_right();
+    };
+});
